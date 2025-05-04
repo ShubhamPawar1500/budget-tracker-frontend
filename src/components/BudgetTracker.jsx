@@ -8,7 +8,7 @@ import {
     TrendingUp, PieChart as PieChartIcon, BarChart as BarChartIcon
 } from 'lucide-react';
 import * as d3 from 'd3';
-import Cards from './cards';
+import Cards from './Cards';
 import { createCategories, deleteCategories, getAllCategories } from '../proxy/CategoryProxy';
 import { createBudget, getAllBudget, updateBudget } from '../proxy/BudgetProxy';
 import { createTransaction, deleteTransaction, getAllTransaction } from '../proxy/TransactionProxy';
