@@ -387,7 +387,7 @@ export default function BudgetTracker() {
         // Check if budget for this category already exists
         const existingBudgetIndex = budgets.find(b => b.categoryId === parseInt(newBudget.categoryId));
 
-        if (existingBudgetIndex.id) {
+        if (existingBudgetIndex?.id) {
             // Update existing budget
             let data = await updateBudget(existingBudgetIndex.id, newBudget);
             if (data.id) {
